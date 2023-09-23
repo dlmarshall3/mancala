@@ -1,0 +1,28 @@
+<div>
+  <table class="table-fixed border">
+    <tr class="border">
+      <td class="border" rowspan="2" id="p1-mancala">{{playerOneStones.mancala}}</td>
+      <td class="border" id="p1-1" (click)="onClick($event)">{{playerOneStones.holeOne}}</td>
+      <td class="border" id="p1-2" (click)="onClick($event)">{{playerOneStones.holeTwo}}</td>
+      <td class="border" id="p1-3" (click)="onClick($event)">{{playerOneStones.holeThree}}</td>
+      <td class="border" id="p1-4" (click)="onClick($event)">{{playerOneStones.holeFour}}</td>
+      <td class="border" id="p1-5" (click)="onClick($event)">{{playerOneStones.holeFive}}</td>
+      <td class="border" id="p1-6" (click)="onClick($event)">{{playerOneStones.holeSix}}</td>
+      <td class="border" id="p2-mancala" (click)="onClick($event)" rowspan="2">
+        {{playerTwoStones.mancala}}
+      </td>
+    </tr>
+    <tr>
+      <td class="border" id="p2-1" (click)="onClick($event)">{{playerTwoStones.holeOne}}</td>
+      <td class="border" id="p2-2" (click)="onClick($event)">{{playerTwoStones.holeTwo}}</td>
+      <td class="border" id="p2-3" (click)="onClick($event)">{{playerTwoStones.holeThree}}</td>
+      <td class="border" id="p2-4" (click)="onClick($event)">{{playerTwoStones.holeFour}}</td>
+      <td class="border" id="p2-5" (click)="onClick($event)">{{playerTwoStones.holeFive}}</td>
+      <td class="border" id="p2-6" (click)="onClick($event)">{{playerTwoStones.holeSix}}</td>
+    </tr>
+  </table>
+  <div>
+    <button class="mt-8 border px-12 py-4 bg-green-200" (click)="onGameStart()">Start</button>
+    <button class="mt-8 ml-8 border px-12 py-4 bg-red-200" (click)="onGameReset()">Reset</button>
+  </div>
+</div>
